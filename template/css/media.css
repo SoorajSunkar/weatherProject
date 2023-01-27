@@ -1,0 +1,125 @@
+@media (max-width:1000px) {
+    html{
+        font-size: 55%;
+    }
+}
+@media (max-width:900px) {
+    html{
+        font-size: 55%;
+    }
+
+    .heading div{
+        display: block;
+    }
+
+    .heading nav{
+        position:absolute;
+        top: 110%;
+        right: -500%;
+        width: 30rem;
+        /* height: 30rem; */
+        padding: 2rem 0;
+        color: #fff;
+        z-index: 10000000;
+        background:#141111;
+        border-radius: 1rem;
+        box-shadow: var(--box-shadow);
+    }
+
+    .heading nav.active{
+        right:2rem;
+    }
+    .heading nav a{
+        padding: 2rem 3rem;
+        color: #fff;
+        width: 100%;
+        display: block;
+        margin: 1rem 0rem;
+        /* background: #000; */
+    }
+    .home{
+        padding: 1rem 5%;
+        margin-bottom:8rem;
+    }
+}
+
+@media (max-width:840px) {
+    .home{
+        margin-bottom: 18rem;
+    }
+    .articles-container{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+
+@media (max-width:838px) {
+    html{
+        font-size: 55%;
+    }
+
+    .box{
+        /* width:50rem; */
+     /* margin: 2rem 1rem; */
+
+        /* padding: 0rem 3rem; */
+    }
+    
+   
+
+    .home .container{
+        flex-flow: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .home .container .intro{
+        width:100%;
+    }
+    .home .container .pics{
+        width:100%;
+    }
+    .home .container .pics img{
+        width:100%;
+    }
+
+}
+
+@media (max-width:896px) {
+    html{
+        font-size:55%;
+    }
+    .about{
+        top: 10rem;
+        padding: 2rem 3%;
+    }
+
+    .about .about_container{
+        justify-content: center;
+    }
+    .about .about_container .abouts{
+        width: 100%;
+        margin-left: 0  ;
+    }
+}
+
+@media (max-width:548px) {
+    html{
+        font-size:  55%;
+    }
+
+    .box{
+        width: 100%;
+
+    }
+    .box .container{
+        width: 100%;
+    }
+    .articles-container{
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    .reader .reader-container{
+        width: 90%;
+    }
+}

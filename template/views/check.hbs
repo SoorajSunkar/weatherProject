@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wheather by cj</title>
+
+    <!-- fav icon -->
+
+    <link rel="shortcut icon" href="../img/logo.png" type="image/image">
+
+    <!-- custome css link -->
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/media.css">
+
+    <!-- font awesome cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+{{>header}}
+
+<section class="search">
+    <div class="search-box">
+        <form action="/check" method="post">
+            <input type="text" name="search" id="search" placeholder="Type here to search">
+            <div class="fas fa-search" id="submit"></div>
+        </form>
+    </div>
+</section>
+
+<section class="box">
+    <div class="container">
+        <div class="place">
+            <span>{{city}}</span> || <span>{{country}}</span>
+        </div>
+
+        <div class="condition">
+            <div class="weather">
+                <span>{{text}}℃</span>||<span>{{condi}}</span>||<span>
+                    <img src="{{src}}" alt="loading...">
+                </span>
+            </div>
+            <div class="time">
+                <div class="date">
+                <span>{{date}} </span>||<span> {{month}} </span>||<span> {{year}} </span></div>
+                <div class="clock">
+                    <span>{{hour}}</span> : <span>{{mins}}</span> <span>{{peroid}}</span>
+                </div>
+            </div>
+            <div class="wind">
+                <span>{{speed}}Kph </span> || <span>{{direction}}</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<script  src="js/check.js"></script>
+</body>
+
+</html>
+
